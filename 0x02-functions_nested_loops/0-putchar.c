@@ -1,10 +1,12 @@
+/* 0-putchar.c file display charactes*/
 #include"main.h"
 
 /**
- * Create a function that can display character without using the C standard library
+ * main - Create a function that can display character
+ * without using the C standard library
  *
  * Return: 0 (Successful)
- * */
+ */
 int main(void)
 {
 	_putchar('_');
