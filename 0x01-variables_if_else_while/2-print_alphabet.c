@@ -1,12 +1,12 @@
 #include <unistd.h>
 
 /**
- * _putchar - write character to the stdout.
+ * putchar - write character to the stdout.
  *
  * @c: The to print
  * Return: 1 (Success), -1 (Error)
  */
-int _putchar(char c)
+int putchar(char c)
 {
 	return (write(1, &c, 1));
 }
@@ -22,8 +22,8 @@ int main(void)
 
 	for (c = 'a'; c <= 'z'; c++)
 	{
-		_putchar(c);
+		putchar(c);
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
