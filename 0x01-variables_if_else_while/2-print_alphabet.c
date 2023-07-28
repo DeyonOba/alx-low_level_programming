@@ -1,15 +1,4 @@
-#include <unistd.h>
-
-/**
- * putchar - write character to the stdout.
- *
- * @c: The to print
- * Return: 1 (Success), -1 (Error)
- */
-int putchar(char c)
-{
-	return (write(1, &c, 1));
-}
+#include <stdio.h>
 
 /**
  * main - print character a to z
