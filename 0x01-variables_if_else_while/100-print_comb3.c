@@ -12,7 +12,7 @@ int main(void)
 	for (i = '0'; i <= '8'; i++)
 	{
 		j = i + 1;
-		for (j; j <= '9'; j++)
+		while (j <= '9')
 		{
 			putchar(i);
 			putchar(j);
@@ -22,6 +22,7 @@ int main(void)
 			}
 			putchar(',');
 			putchar(' ');
+			j++;
 		}
 	}
 	putchar('\n');
