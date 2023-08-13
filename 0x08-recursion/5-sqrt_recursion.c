@@ -12,6 +12,7 @@
 double calculateSqrt(int num, double guess, double epsilon)
 {
 	double newGuess = 0.5 * (guess + num / guess);
+	
 	if (fabs(newGuess - guess) < epsilon)
 	{
 		return (newGuess);
