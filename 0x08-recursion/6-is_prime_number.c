@@ -6,7 +6,7 @@
  * @factor: whole number that is recursively reduced by 1
  *
  * Return: 1 if prime, else 0 not prime
- */ 
+ */
 int find_factors(int n, int factor)
 {
 	if (factor == 1)
