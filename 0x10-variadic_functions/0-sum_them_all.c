@@ -3,7 +3,7 @@
 
 /**
  * sum_them_all - sum all its parameters
- * n: number of parameters
+ * @n: number of parameters
  *
  * Return: the sum of parameters
  */
@@ -11,8 +11,8 @@ int sum_them_all(const unsigned int n, ...)
 {
 	unsigned int i;
 	int sum = 0;
-
 	va_list args;
+
 	va_start(args, n);
 	for (i = 0; i < n; i++)
 	{
