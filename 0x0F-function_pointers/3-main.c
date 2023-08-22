@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	int b = atoi(argv[3]);
 
 	if (argc != 4)
-		exit(-1);
+		return (-1);
 	printf("%d\n", (get_op_func(operator))(a, b));
 
 	return (0);
