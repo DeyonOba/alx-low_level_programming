@@ -4,11 +4,13 @@
  * main - Print number of argument pass in the command line
  *
  * @argc: Argument count
+ * @argv: Argument vector
  * Return: 0 (Success), -1 (Error)
  */
-int main(int argc)
+int main(int argc, char **argv)
 {
-	printf("%d\n", argc);
+	(void)argv;
+	printf("%d\n", argc - 1);
 	return (0);
 }
 
