@@ -23,6 +23,8 @@ unsigned int binary_to_uint(const char *b)
 				pow *= 2;
 			sum += pow * (c - ascii_0);
 		}
+		else
+			return (0);
 	}
 	return (sum);
 }
