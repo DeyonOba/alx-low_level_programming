@@ -1,7 +1,21 @@
+# compiler to be used
 CC = gcc
-SRC = main.c school.c
+# source code file
+SRC = $(wildcard *.c)
+# object file
 OBJ = ($SRC:.c=.o)
+# excuteable name
 Name = school
 
-all : $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+# default rule
+all: $(Name)
+
+# rule to build the executable
+$(Name) : $(OBJ)
+	$(CC) -o $@ $^
+
+# rule to create object files
+%.o : %.c
+	$(CC) -c -o $@ $<
+
+
