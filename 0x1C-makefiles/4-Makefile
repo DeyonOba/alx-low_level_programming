@@ -1,0 +1,30 @@
+# compiler to be used
+CC = gcc
+# c source code files
+SRC = *.c
+# c object files
+OBJ = $(SRC:.c=.o)
+# name of executeable file
+NAME = school
+# program to delete files
+RM = rm -f
+# compiler flags
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+# rule to recompile only the updated source files
+all: $(OBJ)
+	$(CC) $^ -o $(NAME)
+
+# rule to remove temporary files
+clean: 
+	$(RM) *~ $(NAME)
+
+# rule to remove all object files
+oclean:
+	$(RM) $(OBJ)
+
+# rule to remove all temporary, executables and object files
+fclean: clean oclean
+
+# remove all object file and recompiles all source files
+re oclean all
