@@ -10,8 +10,11 @@ OBJ = $(SRC:%.c=%.o)
 # Executable name
 NAME = school
 
+# Default rule
+all: $(NAME)
+
 # Rule to build the executable
-all: $(OBJ)
+$(NAME): $(OBJ)
 	$(CC) $^ -o $(NAME)
 
 # Rule to compile .c files into .o files
